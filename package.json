@@ -1,0 +1,48 @@
+{
+  "name": "sails-js-associations",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "async": "2.0.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-coffee": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jst": "^1.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sails-linker": "^1.0.4",
+    "grunt-sync": "^0.8.0",
+    "sails": "^1.0.2",
+    "sails-hook-grunt": "^3.0.2",
+    "sails-hook-orm": "^2.0.0-16",
+    "sails-hook-sockets": "^1.4.0"
+  },
+  "devDependencies": {
+    "@sailshq/eslint": "^4.19.3"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anonymous node/sails user/sails-js-associations.git"
+  },
+  "author": "anonymous node/sails user",
+  "license": "",
+  "engines": {
+    "node": ">=8.11"
+  }
+}
